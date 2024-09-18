@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = parseFloat(prompt("Escreva o primeiro número"));
+        var b = parseFloat(prompt("Escreva o segundo número"));
+        var c = parseFloat(prompt("Escreva o terceiro número"));
+        var maior1, maior2, soma;
+
+        if (a >= b && a >= c) {
+            maior1 = a;
+            maior2 = b >= c ? b : c;
+        }
+        else if (b >= a && b >= c) {
+            maior1 = b;
+            maior2 = a >= c ? a : c;
+        }
+        else if (c >= a && c >= b) {
+            maior1 = c;
+            maior2 = b >= a ? b : a;
+        }
+
+        soma = maior1 + maior2;
+        alert("A soma dos dois maiores números é igual a " + soma)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

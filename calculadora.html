@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro Calculadora</title>
+    <script>
+        var valor1 = parseInt(prompt("Informe o primeiro valor inteiro:"));
+        var valor2 = parseInt(prompt("Informe o segundo valor inteiro:"));
+        var operacao = parseInt(prompt("Informe a operação a ser executada (1. Adição, 2. Subtração, 3. Divisão, 4. Multiplicação):"));
+        var resultado;
+
+        if (operacao === 1) {
+            resultado = valor1 + valor2;
+        } else if (operacao === 2) {
+            resultado = valor1 - valor2;
+        } else if (operacao === 3) {
+            resultado = valor1 / valor2;
+        } else if (operacao === 4) {
+            resultado = valor1 * valor2;
+        } else {
+            alert("Operação inválida. Por favor, informe um valor entre 1 e 4.");
+        }
+
+        if (resultado !== undefined) {
+            alert("O resultado da operação é: " + resultado);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

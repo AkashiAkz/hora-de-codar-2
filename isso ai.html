@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var valores = []
+        var soma = 0
+        var validos = 0
+
+        for (var i = 0; i < 4; i++) {
+            var valor = parseFloat(prompt("Informe o valor " + (i + 1) + " (entre 0 e 10):"));
+            if (valor > 0 && valor < 10) {
+                valores.push(valor);
+                soma += valor;
+                validos++;
+            }
+            else {
+                alert("Valor invalido. Por favor, informe um numero entre 0 e 10.")
+
+                i--; // Decrementa o contador para repetir a entrada invalida
+            }
+        }
+
+        var media = soma / validos; 
+
+        var mensagem = "Valores informados: ";
+        for (var i = 0; i < valores.length; i++){
+            mensagem += valores [i] + " ";
+        }
+        mensagem += "\nMédia: " + media;
+
+        if (media > 5) {
+            mensagem += "\nVocê passou no teste";
+        } else {
+            mensagem += "\nTente novamente";
+        }
+        alert(mensagem)
+    
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
